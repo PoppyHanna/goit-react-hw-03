@@ -1,6 +1,8 @@
 import styles from './ContactForm.module.css'
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import { IoPersonAddSharp } from "react-icons/io5";
+
 
 const initialValues = {
   name: '',
@@ -37,11 +39,11 @@ const ContactForm = ({ addContact }) => {
           <ErrorMessage name="name" component="div" className={styles.error} />
         </div>
         <div>
-          <label htmlFor="number">Phone Number:</label>
+          <label htmlFor="number"> Phone Number:</label>
           <Field type="text" id="number" name="number" />
           <ErrorMessage name="number" component="div" className={styles.error} />
         </div>
-        <button type="submit">Add Contact</button>
+        <button type="submit">Add Contact <IoPersonAddSharp /></button>
       </Form>
     </Formik>
   );

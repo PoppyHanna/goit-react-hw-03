@@ -1,3 +1,7 @@
+import { GiRotaryPhone } from "react-icons/gi";
+import { FaUserAlt } from "react-icons/fa";
+import { RiDeleteBin5Line } from "react-icons/ri";
+
 const Contact = ({ contact, onDelete }) => {
   const handleDelete = () => {
     onDelete(contact.id);
@@ -5,9 +9,9 @@ const Contact = ({ contact, onDelete }) => {
 
   return (
     <div>
-      <p>{contact.name}</p>
-      <p>{contact.number}</p>
-      <button onClick={handleDelete}>Delete</button>
+      <p><FaUserAlt /> {contact.name}</p>
+      <p><GiRotaryPhone /> {contact.number}</p>
+      <button onClick={handleDelete}>Delete <RiDeleteBin5Line /></button>
     </div>
   );
 };
