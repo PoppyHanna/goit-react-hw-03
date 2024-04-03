@@ -32,18 +32,18 @@ const ContactForm = ({ addContact }) => {
       validationSchema={validationSchema}
       onSubmit={handleSubmit}
     >
-      <Form>
-        <div>
+      <Form className={styles.form}>
+        <div className={styles.box}>
           <label htmlFor="name">Name:</label>
-          <Field type="text" id="name" name="name" />
+          <Field type="text" id="name" name="name" placeholder="Your name..." className={styles.input} />
           <ErrorMessage name="name" component="div" className={styles.error} />
         </div>
-        <div>
+        <div className={styles.box}>
           <label htmlFor="number"> Phone Number:</label>
-          <Field type="text" id="number" name="number" />
+          <Field type="text" id="number" name="number" placeholder="Your number..." className={styles.input} />
           <ErrorMessage name="number" component="div" className={styles.error} />
         </div>
-        <button type="submit">Add Contact <IoPersonAddSharp /></button>
+        <button type="submit" className={styles.button}>Add Contact <IoPersonAddSharp /></button>
       </Form>
     </Formik>
   );
