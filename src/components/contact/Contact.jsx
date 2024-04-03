@@ -10,9 +10,9 @@ const Contact = ({ contact, onDelete }) => {
 
   return (
     <div className={styles.box}>
-      <p className={styles.name}><span className={styles.span}><FiUser className={styles.icon}/></span> {contact.name}</p>
-      <p className={styles.number}><span><GiRotaryPhone className={styles.icon}/></span> {contact.number}</p>
-      <div className={styles.btn}><button onClick={handleDelete} className={styles.button}>Delete <span><RiDeleteBin5Line /></span></button></div>
+      <p className={styles.name}><FiUser className={styles.icon}/> {contact.name}</p>
+      <p className={styles.number}><GiRotaryPhone className={styles.icon}/> {contact.number}</p>
+      <div className={styles.btn}><button onClick={handleDelete} className={styles.button}>Delete <RiDeleteBin5Line className={styles.trash}/></button></div>
       
     </div>
   );

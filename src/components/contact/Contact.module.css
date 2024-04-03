@@ -16,14 +16,20 @@
 }
 
 .icon {
+  vertical-align: text-bottom;
   width: 35px;
   height: 35px;
   color: #ec328f;
 }
 
+.trash {
+  /* vertical-align: middle; */
+  margin-top: 5px;
+}
+
 .btn {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
 
