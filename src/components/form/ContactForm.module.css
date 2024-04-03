@@ -6,6 +6,7 @@
   padding: 15px;
   border: 1px solid #000;
   border-radius: 3px;
+  max-width: max-content;
 }
 
 .box {
